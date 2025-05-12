@@ -34,4 +34,42 @@ fetch('./simulado/database.json')
         image.src = data.features[index].icon
         image.alt = data.features[index].title
     })
+
+    const trendingGames = document.querySelector('.trendGamesWrapper')
+    const trendingGamesJson = data.trendingGames;
+    console.log(trendingGamesJson);
+    
+    trendingGamesJson.forEach((trendGame) => {
+        const gameArticle = document.createElement('article');
+        gameArticle.classList.add('trending-game');
+
+        const gameImage = document.createElement('img')
+        gameImage.src = trendGame.image;
+        gameImage.classList.add('gameImage');
+        gameArticle.appendChild(gameImage);
+
+        const gameCategory = document.createElement('p')
+        gameCategory.textContent = trendGame.category
+        gameCategory.classList.add('gameCategory')
+        gameArticle.appendChild(gameCategory)
+
+        const gameTitle = document.createElement('p')
+        gameTitle.textContent = trendGame.title
+        gameTitle.classList.add('gameTitle')
+        gameArticle.appendChild(gameTitle);
+
+        const gameText = document.createElement('div')
+        gameText.appendChild(gameCategory)
+        gameText.appendChild(gameTitle)
+        gameText.classList.add('gameText')
+        gameArticle.appendChild(gameText)
+
+        const gamePrice = document.createElement('span')
+        gamePrice.textContent = `${trendGame.price}`
+        gamePrice.classList.add('gamePrice')
+        gameArticle.appendChild(gamePrice);
+
+        trendingGames.appendChild(gameArticle)
+    })
+    
 })

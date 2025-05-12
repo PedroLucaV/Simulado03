@@ -209,3 +209,36 @@ main{
     text-align: center;
 }
 
+.trendGamesWrapper{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.gamePrice{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+.trending-game{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    border-radius: 20px;
+    padding-bottom: 1rem;
+}
+
+.trending-game>img{
+    width: 250px;
+    height: 175px;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
+.gameText{
+    padding: 0 1rem;
+}
