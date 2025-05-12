@@ -1,0 +1,196 @@
+{
+    "siteInfo": {
+      "name": "LUGX",
+      "tagline": "BEST GAMING SITE EVER!",
+      "description": "LUGX Gaming is free Bootstrap 5 HTML CSS website template for your gaming websites. You can download and use this layout for commercial purposes. Please tell your friends about TemplateMo.",
+      "copyright": "Copyright © 2025 LUGX Gaming Company. All rights reserved. - Design: TemplateMo",
+      "logo": "/assets/images/logo.png"
+    },
+    "features": [
+      {
+        "id": "feature-1",
+        "title": "FREE STORAGE",
+        "icon": "https://img.icons8.com/fluency/96/database.png",
+        "iconColor": "#0071f8"
+      },
+      {
+        "id": "feature-2",
+        "title": "USER MORE",
+        "icon": "https://img.icons8.com/fluency/96/user-group-man-woman.png",
+        "iconColor": "#0071f8"
+      },
+      {
+        "id": "feature-3",
+        "title": "REPLY READY",
+        "icon": "https://img.icons8.com/fluency/96/reply-arrow.png",
+        "iconColor": "#0071f8"
+      },
+      {
+        "id": "feature-4",
+        "title": "EASY LAYOUT",
+        "icon": "https://img.icons8.com/fluency/96/layout.png",
+        "iconColor": "#0071f8"
+      }
+    ],
+    "trendingGames": [
+      {
+        "id": "trending-1",
+        "title": "Shadow Warriors",
+        "category": "Action",
+        "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "price": 28,
+        "discountedPrice": 20,
+        "discount": 40,
+        "featured": true
+      },
+      {
+        "id": "trending-2",
+        "title": "Cyber Realm",
+        "category": "Action",
+        "image": "https://images.unsplash.com/photo-1519669556878-63bdad8a1a49?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "price": 44,
+        "discountedPrice": 36,
+        "discount": 20
+      },
+      {
+        "id": "trending-3",
+        "title": "Night Hunter",
+        "category": "Action",
+        "image": "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "price": 64,
+        "discountedPrice": 44,
+        "discount": 32
+      },
+      {
+        "id": "trending-4",
+        "title": "Future Crisis",
+        "category": "Action",
+        "image": "https://images.unsplash.com/photo-1614294149010-950b698f72c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "price": 74,
+        "discountedPrice": 62,
+        "discount": 15
+      }
+    ],
+    "mostPlayed": [
+      {
+        "id": "most-played-1",
+        "title": "Warframe",
+        "category": "Adventure",
+        "image": "https://images.unsplash.com/photo-1560419015-7c427e8ae5ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        "id": "most-played-2",
+        "title": "Battlegrounds",
+        "category": "Adventure",
+        "image": "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        "id": "most-played-3",
+        "title": "Apex Legends",
+        "category": "Adventure",
+        "image": "https://images.unsplash.com/photo-1534423861386-85a16f5d13fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        "id": "most-played-4",
+        "title": "The Sims 4",
+        "category": "Adventure",
+        "image": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        "id": "most-played-5",
+        "title": "Lost Ark",
+        "category": "Adventure",
+        "image": "https://images.unsplash.com/photo-1605899435973-ca2d1a8861cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        "id": "most-played-6",
+        "title": "Destiny 2",
+        "category": "Adventure",
+        "image": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      }
+    ],
+    "categories": [
+      {
+        "id": "category-1",
+        "name": "Action",
+        "image": "https://images.unsplash.com/photo-1580327344181-c1163234e5a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "featured": true
+      },
+      {
+        "id": "category-2",
+        "name": "Strategy",
+        "image": "https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+      },
+      {
+        "id": "category-3",
+        "name": "RPG",
+        "image": "https://images.unsplash.com/photo-1585620385456-4759f9b5c7d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+      },
+      {
+        "id": "category-4",
+        "name": "Racing",
+        "image": "https://images.unsplash.com/photo-1556438064-2d7646166914?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+      },
+      {
+        "id": "category-5",
+        "name": "Shooting",
+        "image": "https://images.unsplash.com/photo-1576744615440-bf1fbd0eb253?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+      }
+    ],
+    "promoSection": {
+      "title": "Go Pre-Order Buy & Get Best Prices For You!",
+      "description": "Lorem ipsum dolor consectetur adipiscing, sed do eiusmod tempor incididunt.",
+      "buttonText": "SHOP NOW",
+      "buttonUrl": "shop.html",
+      "image": "https://images.unsplash.com/photo-1542751110-97427bbecf20?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+    },
+    "newsletter": {
+      "title": "Get Up To $100 Off Just Buy Subscribe Newsletter!",
+      "inputPlaceholder": "Your email...",
+      "buttonText": "SUBSCRIBE NOW"
+    },
+    "heroSection": {
+      "featuredGame": {
+        "title": "Shadow Warriors",
+        "image": "https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "price": 22,
+        "discount": 40
+      },
+      "searchBar": {
+        "placeholder": "Type Something",
+        "buttonText": "SEARCH NOW"
+      }
+    },
+    "imageAssets": {
+      "logo": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80",
+      "hero": "https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      "trendingGames": [
+        "https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1519669556878-63bdad8a1a49?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1614294149010-950b698f72c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      ],
+      "mostPlayed": [
+        "https://images.unsplash.com/photo-1560419015-7c427e8ae5ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        "https://images.unsplash.com/photo-1534423861386-85a16f5d13fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        "https://images.unsplash.com/photo-1605899435973-ca2d1a8861cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      ],
+      "categories": [
+        "https://images.unsplash.com/photo-1580327344181-c1163234e5a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "https://images.unsplash.com/photo-1585620385456-4759f9b5c7d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "https://images.unsplash.com/photo-1556438064-2d7646166914?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "https://images.unsplash.com/photo-1576744615440-bf1fbd0eb253?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+      ],
+      "promo": "https://images.unsplash.com/photo-1542751110-97427bbecf20?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "icons": {
+        "storage": "https://img.icons8.com/fluency/96/database.png",
+        "user": "https://img.icons8.com/fluency/96/user-group-man-woman.png",
+        "reply": "https://img.icons8.com/fluency/96/reply-arrow.png",
+        "layout": "https://img.icons8.com/fluency/96/layout.png"
+      }
+    }
+  }
