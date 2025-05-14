@@ -134,4 +134,103 @@ fetch('./simulado/database.json')
         categoryImage.classList.add('cI')
         categoryArticle.appendChild(categoryImage)
     })
+
+    const promoSection = document.querySelector('.promo-section')
+    const ourShop = data.promoSection
+    const newsLetter = data.newsletter
+
+    const ourShopArticle = document.createElement('article');
+    ourShopArticle.classList.add('ourshop')
+    promoSection.appendChild(ourShopArticle)
+    
+    const shop = () => {
+        const headingShop = document.createElement('div')
+        headingShop.classList.add('heading-promo')
+        ourShopArticle.appendChild(headingShop)
+
+        const shopHeadingSup = document.createElement('p')
+        shopHeadingSup.textContent = 'Our Shop'
+        headingShop.appendChild(shopHeadingSup)
+
+        const shopHeadingTitle = document.createElement('h1')
+            const firstP = document.createElement('span')
+            firstP.textContent = ourShop.title.split('Prices')[0]
+            shopHeadingTitle.appendChild(firstP)
+
+            const decoratedTitleText = document.createElement('span')
+            decoratedTitleText.textContent = ourShop.title.split(' ')[6]
+            decoratedTitleText.style.color = `#0071f8`
+            shopHeadingTitle.appendChild(decoratedTitleText)
+
+            const lastP = document.createElement('span')
+            lastP.textContent = ourShop.title.split('Prices')[1]
+            shopHeadingTitle.appendChild(lastP)
+
+            headingShop.appendChild(shopHeadingTitle)
+
+        const shopHeadingDesc = document.createElement('p')
+        shopHeadingDesc.textContent = ourShop.description
+        shopHeadingDesc.classList.add('shopDesc')
+        ourShopArticle.appendChild(shopHeadingDesc)
+
+        const shopButton = document.createElement('button')
+        shopButton.textContent = ourShop.buttonText
+        ourShopArticle.appendChild(shopButton)
+    }
+    shop()
+
+    const promoImgBg = document.createElement('img')
+    promoImgBg.src = ourShop.image
+    promoImgBg.classList.add('img-promo')
+    promoSection.appendChild(promoImgBg)
+
+    const newsLetterArticle = document.createElement('article');
+    newsLetterArticle.classList.add('newsLetter')
+    promoSection.appendChild(newsLetterArticle)
+
+    const newsletter = () => {
+        const headingShop = document.createElement('div')
+        headingShop.classList.add('heading-promo')
+        newsLetterArticle.appendChild(headingShop)
+
+        const shopHeadingSup = document.createElement('p')
+        shopHeadingSup.textContent = 'NEWSLETTER'
+        headingShop.appendChild(shopHeadingSup)
+
+        const shopHeadingTitle = document.createElement('h1')
+            const firstP = document.createElement('span')
+            firstP.textContent = newsLetter.title.split('Subscribe')[0]
+            shopHeadingTitle.appendChild(firstP)
+
+            const decoratedTitleText = document.createElement('span')
+            decoratedTitleText.textContent = newsLetter.title.split(' ')[7]
+            decoratedTitleText.style.color = `#0071f8`
+            shopHeadingTitle.appendChild(decoratedTitleText)
+
+            const lastP = document.createElement('span')
+            lastP.textContent = newsLetter.title.split('Subscribe')[1]
+            shopHeadingTitle.appendChild(lastP)
+
+            headingShop.appendChild(shopHeadingTitle)
+
+            const inpBox = document.createElement('div')
+            inpBox.classList.add('inp-box')
+
+            const emailInp = document.createElement('input')
+            emailInp.type = 'email'
+            emailInp.placeholder = newsLetter.inputPlaceholder
+            emailInp.classList.add('inp-email')
+            inpBox.appendChild(emailInp)
+
+            const btnSend = document.createElement('button')
+            btnSend.textContent = newsLetter.buttonText
+            btnSend.classList.add('btn-send')
+            inpBox.appendChild(btnSend)
+
+            newsLetterArticle.appendChild(inpBox)
+    }
+
+    newsletter()
+
+    
 })
