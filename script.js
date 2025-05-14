@@ -4,7 +4,7 @@ fetch('./simulado/database.json')
 
     console.log(data)
     const logo = document.querySelector('.logo')
-    logo.src = data.siteInfo.logo;
+    logo.src = data.imageAssets.logo;
 
     const headingHero = document.querySelector('#heading-hero');
     headingHero.textContent = data.siteInfo.tagline
@@ -130,7 +130,7 @@ fetch('./simulado/database.json')
 
         const categoryImage = document.createElement('img')
         categoryImage.src = tC.image
-        categoryImage.alt = tC.name
+        categoryImage.alt = `${tC.name} game image`
         categoryImage.classList.add('cI')
         categoryArticle.appendChild(categoryImage)
     })
