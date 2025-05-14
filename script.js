@@ -40,7 +40,7 @@ fetch('./simulado/database.json')
     console.log(trendingGamesJson);
     
     trendingGamesJson.forEach((trendGame) => {
-        const gameArticle = document.createElement('article');
+        const gameArticle = document.createElement('div');
         gameArticle.classList.add('trending-game');
 
         const gameImage = document.createElement('img')
@@ -87,7 +87,7 @@ fetch('./simulado/database.json')
     console.log(mostPlayedJson);
     
     mostPlayedJson.forEach((mP) => {
-        const gameArticle = document.createElement('article');
+        const gameArticle = document.createElement('div');
         gameArticle.classList.add('most-played-game')
         mostPlayed.appendChild(gameArticle)
 
@@ -120,7 +120,7 @@ fetch('./simulado/database.json')
     console.log(topCategoriesJson);
 
     topCategoriesJson.forEach((tC) => {
-        const categoryArticle = document.createElement('article')
+        const categoryArticle = document.createElement('div')
         categoryArticle.classList.add('category-card')
         topCategories.appendChild(categoryArticle)
 
@@ -139,7 +139,7 @@ fetch('./simulado/database.json')
     const ourShop = data.promoSection
     const newsLetter = data.newsletter
 
-    const ourShopArticle = document.createElement('article');
+    const ourShopArticle = document.createElement('div');
     ourShopArticle.classList.add('ourshop')
     promoSection.appendChild(ourShopArticle)
     
@@ -152,7 +152,7 @@ fetch('./simulado/database.json')
         shopHeadingSup.textContent = 'Our Shop'
         headingShop.appendChild(shopHeadingSup)
 
-        const shopHeadingTitle = document.createElement('h1')
+        const shopHeadingTitle = document.createElement('h2')
             const firstP = document.createElement('span')
             firstP.textContent = ourShop.title.split('Prices')[0]
             shopHeadingTitle.appendChild(firstP)
@@ -184,7 +184,7 @@ fetch('./simulado/database.json')
     promoImgBg.classList.add('img-promo')
     promoSection.appendChild(promoImgBg)
 
-    const newsLetterArticle = document.createElement('article');
+    const newsLetterArticle = document.createElement('div');
     newsLetterArticle.classList.add('newsLetter')
     promoSection.appendChild(newsLetterArticle)
 
@@ -197,7 +197,7 @@ fetch('./simulado/database.json')
         shopHeadingSup.textContent = 'NEWSLETTER'
         headingShop.appendChild(shopHeadingSup)
 
-        const shopHeadingTitle = document.createElement('h1')
+        const shopHeadingTitle = document.createElement('h2')
             const firstP = document.createElement('span')
             firstP.textContent = newsLetter.title.split('Subscribe')[0]
             shopHeadingTitle.appendChild(firstP)
@@ -232,5 +232,8 @@ fetch('./simulado/database.json')
 
     newsletter()
 
-    
+    const footer = document.querySelector('footer')
+    const footerTextCopy = document.createElement('p')
+    footerTextCopy.textContent = data.siteInfo.copyright
+    footer.appendChild(footerTextCopy)
 })
