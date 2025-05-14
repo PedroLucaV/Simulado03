@@ -182,7 +182,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: calc(-70px - 6rem);
+    margin-top: calc(-70px - 5rem);
     gap: 2rem;
     padding: 0 4.5rem;
 }
@@ -323,7 +323,7 @@ main{
 
 .most-played{
     width: 100%;
-    padding: 4.5rem 4.5rem;
+    padding: 6rem 4.5rem;
     height: fit-content;
     background-color: rgb(219, 219, 219);
     border-radius: 100px;
@@ -381,3 +381,4 @@ main{
     height: 200px;
     border-radius: 25px;
 }
+
