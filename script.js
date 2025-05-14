@@ -181,6 +181,7 @@ fetch('./simulado/database.json')
 
     const promoImgBg = document.createElement('img')
     promoImgBg.src = ourShop.image
+    promoImgBg.alt = 'img-promo'
     promoImgBg.classList.add('img-promo')
     promoSection.appendChild(promoImgBg)
 
