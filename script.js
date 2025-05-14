@@ -65,9 +65,18 @@ fetch('./simulado/database.json')
         gameArticle.appendChild(gameText)
 
         const gamePrice = document.createElement('span')
-        gamePrice.textContent = `${trendGame.price}`
+        gamePrice.textContent = `$${trendGame.price}`
         gamePrice.classList.add('gamePrice')
-        gameArticle.appendChild(gamePrice);
+
+        const gameDiscounted = document.createElement('span')
+        gameDiscounted.textContent = `$${trendGame.discountedPrice}`
+        gameDiscounted.classList.add('gameDiscount')
+        
+        const gamePriceDiv = document.createElement('div')
+        gamePriceDiv.classList.add('gamePriceDiv')
+        gamePriceDiv.appendChild(gamePrice)
+        gamePriceDiv.appendChild(gameDiscounted)
+        gameArticle.appendChild(gamePriceDiv);
 
         trendingGames.appendChild(gameArticle)
     })
