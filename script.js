@@ -114,4 +114,24 @@ fetch('./simulado/database.json')
         gameButton.classList.add('gBtn')
         gameArticle.appendChild(gameButton)
     })
+
+    const topCategories = document.querySelector('.top-categories-wrapper')
+    const topCategoriesJson = data.categories;
+    console.log(topCategoriesJson);
+
+    topCategoriesJson.forEach((tC) => {
+        const categoryArticle = document.createElement('article')
+        categoryArticle.classList.add('category-card')
+        topCategories.appendChild(categoryArticle)
+
+        const categoryName = document.createElement('p')
+        categoryName.textContent = tC.name;
+        categoryArticle.appendChild(categoryName)
+
+        const categoryImage = document.createElement('img')
+        categoryImage.src = tC.image
+        categoryImage.alt = tC.name
+        categoryImage.classList.add('cI')
+        categoryArticle.appendChild(categoryImage)
+    })
 })
