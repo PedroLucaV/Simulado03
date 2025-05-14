@@ -63,6 +63,9 @@ header{
 main{
     width: 100%;
     color: var(--Branco);
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
 }
 
 .hero{
@@ -80,13 +83,13 @@ main{
 .image-hero{
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     height: calc(600px - 132px);
 }
 
 .heroImageContainer{
-    width: 300px;
-    height: 75%;
+    width: 350px;
+    height: 80%;
     position: relative;
 }
 
@@ -179,7 +182,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -62.5px;
+    margin-top: calc(-70px - 6rem);
     gap: 2rem;
     padding: 0 4.5rem;
 }
@@ -211,7 +214,6 @@ main{
 }
 
 .trending-games{
-    margin-top: 4rem;
     padding: 0 4.5rem;
     width: 100%;
     display: flex;
@@ -231,7 +233,7 @@ main{
 .text-heading-trending>p{
     color: var(--Vermelho);
     font-weight: 700;
-    font-size: 14pt;
+    font-size: 12pt;
 }
 
 .text-heading-trending>h1{
@@ -246,7 +248,7 @@ main{
     border-radius: 50px;
     height: 40px;
     width: 125px;
-    font-size: 13pt;
+    font-size: 10pt;
     font-weight: 700;
 }
 
@@ -321,7 +323,6 @@ main{
 
 .most-played{
     width: 100%;
-    margin-top: 4rem;
     padding: 4.5rem 4.5rem;
     height: fit-content;
     background-color: rgb(219, 219, 219);

@@ -45,6 +45,7 @@ fetch('./simulado/database.json')
 
         const gameImage = document.createElement('img')
         gameImage.src = trendGame.image;
+        gameImage.alt = trendGame.title
         gameImage.classList.add('gameImage');
         gameArticle.appendChild(gameImage);
 
@@ -92,6 +93,7 @@ fetch('./simulado/database.json')
 
         const gamePicture = document.createElement('img')
         gamePicture.src = mP.image
+        gamePicture.alt = mP.title
         gamePicture.classList.add('gIMp')
         gameArticle.appendChild(gamePicture)
 
