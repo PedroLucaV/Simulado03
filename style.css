@@ -181,6 +181,7 @@ main{
     justify-content: center;
     margin-top: -62.5px;
     gap: 2rem;
+    padding: 0 4.5rem;
 }
 
 .card-feature{
@@ -211,6 +212,7 @@ main{
 
 .trending-games{
     margin-top: 4rem;
+    padding: 0 4.5rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -224,7 +226,6 @@ main{
     color: black;
     justify-content: space-between;
     align-items: center;
-    padding: 0 4.5rem;
 }
 
 .text-heading-trending>p{
@@ -316,4 +317,66 @@ main{
 .gameTitle{
     font-weight: 700;
     font-size: 15pt;
+}
+
+.most-played{
+    width: 100%;
+    margin-top: 4rem;
+    padding: 4.5rem 4.5rem;
+    height: fit-content;
+    background-color: rgb(219, 219, 219);
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.mostPlayedWrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.most-played-game{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.most-played-game>.gameText{
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+    text-align: center;
+}
+
+.most-played-game>.gameText>h2{
+    font-size: 16pt;
+}
+
+.most-played-game>.gameText>p{
+    font-size: 12pt;
+    color: rgb(175, 174, 174);
+}
+
+.gBtn{
+    position: absolute;
+    width: 45%;
+    height: 35px;
+    border: none;
+    color: var(--Branco);
+    background-color: var(--Vermelho);
+    border-radius: 10px;
+    font-weight: 700;
+    bottom: -17.5px;
+}
+
+.gIMp{
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
 }

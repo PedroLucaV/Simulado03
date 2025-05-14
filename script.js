@@ -80,5 +80,36 @@ fetch('./simulado/database.json')
 
         trendingGames.appendChild(gameArticle)
     })
+
+    const mostPlayed = document.querySelector('.mostPlayedWrapper')
+    const mostPlayedJson = data.mostPlayed;
+    console.log(mostPlayedJson);
     
+    mostPlayedJson.forEach((mP) => {
+        const gameArticle = document.createElement('article');
+        gameArticle.classList.add('most-played-game')
+        mostPlayed.appendChild(gameArticle)
+
+        const gamePicture = document.createElement('img')
+        gamePicture.src = mP.image
+        gamePicture.classList.add('gIMp')
+        gameArticle.appendChild(gamePicture)
+
+        const gameText = document.createElement('div')
+        gameText.classList.add('gameText')
+        gameArticle.appendChild(gameText)
+
+        const gameCategory = document.createElement('p')
+        gameCategory.textContent = mP.category
+        gameText.appendChild(gameCategory)
+
+        const gameTitle = document.createElement('h2')
+        gameTitle.textContent = mP.title
+        gameText.appendChild(gameTitle)
+
+        const gameButton = document.createElement('button')
+        gameButton.textContent = 'EXPLORE'
+        gameButton.classList.add('gBtn')
+        gameArticle.appendChild(gameButton)
+    })
 })
